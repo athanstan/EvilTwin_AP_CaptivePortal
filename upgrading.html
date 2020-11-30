@@ -26,9 +26,14 @@
                 <div class="card-body">
 
                     <div class="container text-center mb-3">
+
                         <div class="spinner-border text-success justify" role="status">
                             <span class="sr-only">Loading...</span>
                         </div>
+                        <svg class="d-none mx-auto" id="check" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+
                         <div>
                             <small id="message" class="font-weight-black">Loading</small>
                         </div>
@@ -77,8 +82,12 @@
             function stop() {
                 clearInterval(statusTracker);
                 $('#message').html('Update Complete');
-                $('#continue-btn').removeClass('d-none').addClass('d-block');
-
+                setTimeout(function(){
+                    $('.spinner-border').hide();
+                    $('#check').removeClass('d-none').addClass('d-block');
+                    $('#continue-btn').removeClass('d-none').addClass('d-block');
+                },2000);
+                
             }
             $(document).ready(startProgress); 
         </script>
