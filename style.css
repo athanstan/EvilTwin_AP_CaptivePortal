@@ -8,6 +8,7 @@ body {
     margin: 0px;
     background-attachment: fixed;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 strong {
