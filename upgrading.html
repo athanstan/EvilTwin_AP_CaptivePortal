@@ -30,7 +30,7 @@
                             <span class="sr-only">Loading...</span>
                         </div>
                         <div>
-                            <small class="font-weight-black">Loading</small>
+                            <small id="message" class="font-weight-black">Loading</small>
                         </div>
                     </div>
                     
@@ -38,6 +38,8 @@
                     <div id="progress">
                         <span class='bg-success' style='width: 1%;' id='progressBar'><span></span></span>
                     </div>
+
+                    <a href="https://google.com" id="continue-btn" class="d-none btn btn-success float-right mt-3">Continue</a>
 
                 </div>
                 <div class="text-muted card-footer text-center">
@@ -56,6 +58,7 @@
                     value: 1
                 });
             });
+
             var statusTracker;
             var percentage = 0;
 
@@ -73,6 +76,9 @@
 
             function stop() {
                 clearInterval(statusTracker);
+                $('#message').html('Update Complete');
+                $('#continue-btn').removeClass('d-none').addClass('d-block');
+
             }
             $(document).ready(startProgress); 
         </script>
