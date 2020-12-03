@@ -34,6 +34,31 @@ I have written a really thorough guide on how to implement this attack on a Kali
     - Client-Side Form validation with Parsley.js Library
 - Store credentials to local MySQL Database
 
+## Needed Installations
+
+```
+apt-get update
+apt-get upgrade
+```
+
+You may need to install these following services if they are not already installed in your Kali Box. 
+
+### **DNSmasq**
+```
+apt-get install dnsmasq -y
+```
+
+### **Hostapd**
+```
+apt-get install hostapd
+```
+
+## Libraries 📚
+
+- [Parsley.js](https://parsleyjs.org/)
+
+
+
 ## Contribution
 
 You are more than welcome to expand this repo by constructing your own captive portal designs, thus making this repo a cool library of Evil Twin Captive Portals for every use case scenario in the world! 🤘🌎❤
