@@ -11,3 +11,17 @@ I have written a really thorough guide on how to implement this attack on a Kali
 
 **[Guide on Sudorealm](https://sudorealm.com/blog/evil-twin-attack-guide)**
 
+### Inside the Guide you will learn a great deal of techniques
+---
+**Like**: 
+
+- Simple Reconnaissance.
+- Setting up your own Access Point with ***hostapd***.
+- Distribute ips on connected hosts with ***dnsmasq***.
+- Provide connected users with internet with ***iptables***.
+- Write your own Rewrite rules on the ***Apache2 configurations***.
+- Setup a cool captive portal, with modern Front-End techniques
+    - Bootstrap
+    - jQuery
+    - Client-Side Form validation with Parsley.js Library
+- Store credentials to local MySQL Database
